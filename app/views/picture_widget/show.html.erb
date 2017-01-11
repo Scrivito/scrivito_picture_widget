@@ -1,0 +1,22 @@
+<% if widget.image %>
+  <picture class="img-responsive">
+    <source media='(max-width: <%= ScrivitoPictureWidget.configuration.mobile_breakpoint %>px) and (orientation: portrait)'
+     sizes='100vw'
+     srcset='<%= mobile_image_srcset(widget) %>' class="img-responsive">
+
+     <source media='(max-width: <%= ScrivitoPictureWidget.configuration.mobile_breakpoint %>px) and (orientation: landscape)'
+     sizes='100vw'
+     srcset='<%= tablet_image_srcset(widget) %>' class="img-responsive">
+
+    <source media='(min-width: <%= ScrivitoPictureWidget.configuration.mobile_breakpoint + 1 %>px) and (max-width: <%= ScrivitoPictureWidget.configuration.tablet_breakpoint %>px)'
+     sizes='100vw'
+     srcset='<%= tablet_image_srcset(widget) %>' class="img-responsive">
+
+    <img
+     src='<%= scrivito_path(widget.image.binary.transform(width: 1170)) %>'
+     alt='This is a cool image'
+     srcset='<%= image_srcset(widget) %>' class="img-responsive">
+  </picture>
+<% else %>
+  <div class="alert alert-warning">No image is set. Go to the details view and select one.</div>
+<% end %>
