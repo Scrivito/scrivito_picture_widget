@@ -36,7 +36,7 @@ en:
 Add an initializer to define breakpoints or the srcsets for every image version:
 
 ```ruby
-ScrivitoIconBoxWidget.configure do |config|
+ScrivitoPictureWidget.configure do |config|
   config.image_fallback_size = 1170
   config.mobile_breakpoint = 700
   config.mobile_srcsets = [900, 700, 500, 300]
