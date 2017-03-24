@@ -18,5 +18,6 @@
      srcset='<%= image_srcset(widget) %>' class="img-responsive">
   </picture>
 <% else %>
-  <div class="alert alert-warning">No image is set. Go to the details view and select one.</div>
+  <div class="alert alert-warning"><%= t('scrivito_picture_widget.view.warning', default: 'No image is set. Drag and drop one.') %></div>
+  <%= scrivito_image_tag widget, :image %>
 <% end %>

@@ -1,17 +1,17 @@
-<%= scrivito_details_for t('scrivito_picture_wigdet.details.crop', default: 'Crop') do %>
+<%= scrivito_details_for t('scrivito_picture_widget.details.crop', default: 'Crop') do %>
   <%= scrivito_tag :div, widget, :crop %>
 <% end %>
 
-<%= scrivito_details_for t('scrivito_picture_wigdet.details.image', default: 'Image') do %>
+<%= scrivito_details_for t('scrivito_picture_widget.details.image', default: 'Image') do %>
   <%= scrivito_tag :div, widget, :image %>
 <% end %>
 
-<%= scrivito_details_for t('scrivito_picture_wigdet.details.mobile_image', default: 'Mobile image') do %>
-  <div class="alert alert-info"><%= t('scrivito_picture_wigdet.details.transform_info', default: 'Set if the automatic transformed image does not fit') %></div>
+<%= scrivito_details_for t('scrivito_picture_widget.details.mobile_image', default: 'Mobile image') do %>
+  <div class="alert alert-info"><%= t('scrivito_picture_widget.details.transform_info', default: 'Set if the automatic transformed image does not fit') %></div>
   <%= scrivito_tag :div, widget, :mobile_image %>
 <% end %>
 
-<%= scrivito_details_for t('scrivito_picture_wigdet.details.tablet_image', default: 'Tablet image') do %>
-  <div class="alert alert-info"><%= t('scrivito_picture_wigdet.details.transform_info', default: 'Set if the automatic transformed image does not fit') %></div>
+<%= scrivito_details_for t('scrivito_picture_widget.details.tablet_image', default: 'Tablet image') do %>
+  <div class="alert alert-info"><%= t('scrivito_picture_widget.details.transform_info', default: 'Set if the automatic transformed image does not fit') %></div>
   <%= scrivito_tag :div, widget, :tablet_image %>
 <% end %>

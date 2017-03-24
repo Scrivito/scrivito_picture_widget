@@ -29,6 +29,8 @@ en:
       mobile_image: Mobile image
       tablet_image:  Tablet image
       transform_info: Set if the automatic transformed image does not fit
+    view:
+      warning: No image is set. Drag and drop one.
 ```
 
 ## Configuration
